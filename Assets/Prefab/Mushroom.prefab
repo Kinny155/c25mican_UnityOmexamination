@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5549959644099478922}
   - component: {fileID: 8965392336644107856}
-  - component: {fileID: 5585636701258401584}
   - component: {fileID: 6479599670205518157}
+  - component: {fileID: 9050724047865581611}
+  - component: {fileID: 863748894123750723}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -89,7 +90,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5585636701258401584
+--- !u!114 &6479599670205518157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611521724499323232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d251fa76c76db044bcd20b8a0fdffe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagToActivate: Player
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8965392336644107856}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -7411974349392773033, guid: 797291bef685bc8488bace2a248c5554, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8965392336644107856}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -6264777607469435119, guid: 23ed1f231c73ea542ac4db6b2ec2bf1b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!61 &9050724047865581611
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,46 +179,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1428572, y: 0.85714287}
   m_EdgeRadius: 0
---- !u!114 &6479599670205518157
-MonoBehaviour:
+--- !u!95 &863748894123750723
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5611521724499323232}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d251fa76c76db044bcd20b8a0fdffe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToActivate: Player
-  onTriggerEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8965392336644107856}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -7411974349392773033, guid: 797291bef685bc8488bace2a248c5554, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onTriggerExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8965392336644107856}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -6264777607469435119, guid: 23ed1f231c73ea542ac4db6b2ec2bf1b, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4574bfafe67a3e49bc47f0824af67e5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
