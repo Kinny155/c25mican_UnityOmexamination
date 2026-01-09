@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5549959644099478922}
   - component: {fileID: 8965392336644107856}
   - component: {fileID: 6479599670205518157}
-  - component: {fileID: 9050724047865581611}
-  - component: {fileID: 863748894123750723}
+  - component: {fileID: 1169020626484544523}
+  - component: {fileID: 18135215092639743}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Untagged
@@ -133,7 +133,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!61 &9050724047865581611
+--- !u!61 &1169020626484544523
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,7 +179,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.1428572, y: 0.85714287}
   m_EdgeRadius: 0
---- !u!95 &863748894123750723
+--- !u!95 &18135215092639743
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
